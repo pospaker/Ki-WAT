@@ -22,7 +22,7 @@ namespace Ki_WAT
         {
             m_frmParent = f;
 
-            int n = 1;
+            int n = 2;
 
         }
     }
