@@ -8,12 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Ki_WAT
 {
     public partial class Frm_Main : Form
     {
         Frm_Mainfrm m_frmParent;
-
         public Frm_Main()
         {
             InitializeComponent();
@@ -21,6 +21,7 @@ namespace Ki_WAT
         public void SetParent(Frm_Mainfrm f)
         {
             m_frmParent = f;
+            
         }
     }
 }
