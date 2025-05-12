@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TcpLib;
 
 namespace Ki_WAT
 {
@@ -14,10 +15,10 @@ namespace Ki_WAT
     {
         
         private int m_nCurrentFrmIdx = Def.FOM_IDX_MAIN;
-
         private Form m_ActiveSubForm;
         public Frm_Main m_frmMain = new Frm_Main();
         public Frm_Config m_frmConfig = new Frm_Config();
+        //
 
 
         public Frm_Mainfrm()
@@ -31,8 +32,10 @@ namespace Ki_WAT
 
             InitializeSubForm(m_frmMain);
             InitializeSubForm(m_frmConfig);
-
             ShowFrm(Def.FOM_IDX_MAIN);
+            KI_TcpClient m_tcpSpeed =  new KI_TcpClient();
+            // m_tcpSpeed = new KI_TcpClient("127.0.0.1", 8515);
+
         }
 
         private void InitializeSubForm(Form f)
