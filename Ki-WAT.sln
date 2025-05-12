@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ki-WAT", "Ki-WAT\Ki-WAT.csproj", "{7833B3D1-6362-4C70-99FC-AE258C6E188A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lib_tcp_client", "Lib_tcp_client\Lib_tcp_client.csproj", "{38109433-7EAB-423A-A050-7DC0E64F354C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7833B3D1-6362-4C70-99FC-AE258C6E188A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7833B3D1-6362-4C70-99FC-AE258C6E188A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7833B3D1-6362-4C70-99FC-AE258C6E188A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38109433-7EAB-423A-A050-7DC0E64F354C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38109433-7EAB-423A-A050-7DC0E64F354C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38109433-7EAB-423A-A050-7DC0E64F354C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38109433-7EAB-423A-A050-7DC0E64F354C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
