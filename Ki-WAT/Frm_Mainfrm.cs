@@ -19,6 +19,8 @@ namespace Ki_WAT
         public Frm_Main m_frmMain = new Frm_Main();
         public Frm_Config m_frmConfig = new Frm_Config();
 
+
+        asdfasdf
         public Frm_Mainfrm()
         {
             InitializeComponent();
