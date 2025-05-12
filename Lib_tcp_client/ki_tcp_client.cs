@@ -17,8 +17,8 @@ namespace TcpLib
         private Thread _receiveThread;
         private readonly object _lock = new object();
 
-        public delegate void DataReceivedHandler(byte[] data);
-        public event DataReceivedHandler OnDataReceived;
+        public delegate void DataReceiveClient(byte[] data);
+        public event DataReceiveClient OnDataReceived;
 
 
 
@@ -32,6 +32,7 @@ namespace TcpLib
         {
             try
             {
+             
                 _ipAddress = ipAddress;
                 _port = port;
                 _client = new TcpClient();

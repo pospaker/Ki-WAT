@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ki-WAT", "Ki-WAT\Ki-WAT.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lib_tcp_client", "Lib_tcp_client\Lib_tcp_client.csproj", "{38109433-7EAB-423A-A050-7DC0E64F354C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lib_tcp_server", "Lib_tcp_server\Lib_tcp_server.csproj", "{764FD384-0269-4367-975B-54759AF7A3D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{38109433-7EAB-423A-A050-7DC0E64F354C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38109433-7EAB-423A-A050-7DC0E64F354C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38109433-7EAB-423A-A050-7DC0E64F354C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{764FD384-0269-4367-975B-54759AF7A3D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{764FD384-0269-4367-975B-54759AF7A3D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{764FD384-0269-4367-975B-54759AF7A3D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{764FD384-0269-4367-975B-54759AF7A3D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

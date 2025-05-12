@@ -100,6 +100,7 @@
             this.btnParameter.Tag = "frmParameter";
             this.btnParameter.Text = "Param";
             this.btnParameter.UseVisualStyleBackColor = false;
+            this.btnParameter.Click += new System.EventHandler(this.btnParameter_Click);
             // 
             // btnIo
             // 
@@ -146,6 +147,7 @@
             this.btnManual.Tag = "frmManual";
             this.btnManual.Text = "Manual";
             this.btnManual.UseVisualStyleBackColor = false;
+            this.btnManual.Click += new System.EventHandler(this.btnManual_Click);
             // 
             // pbLogo
             // 
