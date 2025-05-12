@@ -21,9 +21,7 @@ namespace Ki_WAT
         public void SetParent(Frm_Mainfrm f)
         {
             m_frmParent = f;
-
-            int n = 2;
-
         }
+
     }
 }
