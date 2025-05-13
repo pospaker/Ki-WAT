@@ -36,6 +36,10 @@
     <ApplicationIcon>K-Logo.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Lib_DBJob, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Execute\Lib_DBJob.dll</HintPath>
+    </Reference>
     <Reference Include="Lib_tcp_client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Execute\Lib_tcp_client.dll</HintPath>
@@ -57,6 +61,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database\DB_LocalWat.cs" />
+    <Compile Include="Database\DB_TableDef.cs" />
     <Compile Include="Define.cs" />
     <Compile Include="DG_ComLib.cs" />
     <Compile Include="Frm_Config.cs">
@@ -83,6 +89,12 @@
     <Compile Include="Frm_Operator.Designer.cs">
       <DependentUpon>Frm_Operator.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_PitInMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_PitInMonitor.Designer.cs">
+      <DependentUpon>Frm_PitInMonitor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Frm_Config.resx">
@@ -96,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Operator.resx">
       <DependentUpon>Frm_Operator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_PitInMonitor.resx">
+      <DependentUpon>Frm_PitInMonitor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

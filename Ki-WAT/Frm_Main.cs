@@ -14,6 +14,7 @@ namespace Ki_WAT
     public partial class Frm_Main : Form
     {
         Frm_Mainfrm m_frmParent;
+
         public Frm_Main()
         {
             InitializeComponent();

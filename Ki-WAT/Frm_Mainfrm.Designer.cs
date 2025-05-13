@@ -38,6 +38,7 @@
             this.btnManual = new System.Windows.Forms.Button();
             this.pbLogo = new System.Windows.Forms.PictureBox();
             this.BtnMain = new System.Windows.Forms.Button();
+            this.Btn_T = new System.Windows.Forms.Button();
             this.panelNavBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
@@ -47,6 +48,7 @@
             // panelNavBar
             // 
             this.panelNavBar.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panelNavBar.Controls.Add(this.Btn_T);
             this.panelNavBar.Controls.Add(this.pictureBox1);
             this.panelNavBar.Controls.Add(this.picLogo);
             this.panelNavBar.Controls.Add(this.btnParameter);
@@ -175,6 +177,22 @@
             this.BtnMain.UseVisualStyleBackColor = false;
             this.BtnMain.Click += new System.EventHandler(this.BtnMain_Click);
             // 
+            // Btn_T
+            // 
+            this.Btn_T.BackColor = System.Drawing.Color.Gainsboro;
+            this.Btn_T.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Btn_T.Font = new System.Drawing.Font("Verdana", 12F);
+            this.Btn_T.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.Btn_T.Location = new System.Drawing.Point(4, 475);
+            this.Btn_T.Margin = new System.Windows.Forms.Padding(4);
+            this.Btn_T.Name = "Btn_T";
+            this.Btn_T.Size = new System.Drawing.Size(83, 60);
+            this.Btn_T.TabIndex = 551;
+            this.Btn_T.Tag = "frmSetting";
+            this.Btn_T.Text = "TT";
+            this.Btn_T.UseVisualStyleBackColor = false;
+            this.Btn_T.Click += new System.EventHandler(this.Btn_T_Click);
+            // 
             // Frm_Mainfrm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -207,6 +225,7 @@
         private System.Windows.Forms.Button BtnMain;
         private System.Windows.Forms.PictureBox picLogo;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button Btn_T;
     }
 }
 

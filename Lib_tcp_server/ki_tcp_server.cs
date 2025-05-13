@@ -5,7 +5,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 
-namespace TcpLib
+namespace KINT_Lib
 {
     public class KI_Tcp_Server
     {

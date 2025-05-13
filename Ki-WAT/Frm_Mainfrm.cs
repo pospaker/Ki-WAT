@@ -7,9 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using TcpLib;
-using static TcpLib.KI_TcpClient;
-
+using KINT_Lib;
+using static KINT_Lib.KI_TcpClient;
 
 namespace Ki_WAT
 {
@@ -23,7 +22,8 @@ namespace Ki_WAT
         private KI_TcpClient m_tcpBoardSpeed = new KI_TcpClient();
         private KI_Tcp_Server m_tcp_Server = new KI_Tcp_Server();
         private Frm_Operator User_Monitor = null;
-
+        private Frm_PitInMonitor Pit_Monitor = null;
+        private DB_LocalWat m_dbJob;
         public Frm_Mainfrm()
         {
             InitializeComponent();
@@ -43,13 +43,22 @@ namespace Ki_WAT
             m_tcpBoardSpeed.Connect("127.0.0.1", 8511);
             m_tcpBoardSpeed.OnDataReceived += new DataReceiveClient(event_GetSpeedData);
 
+
+            m_dbJob = new DB_LocalWat(Application.StartupPath + "\\System\\WAT-DataDB.mdb");
+
             if (!this.DesignMode)
             {
-                if (User_Monitor == null || User_Monitor.Text == "")
-                {
-                    User_Monitor = new Frm_Operator();
-                    User_Monitor.Show();
-                }
+                //if (User_Monitor == null || User_Monitor.Text == "")
+                //{
+                //    User_Monitor = new Frm_Operator();
+                //    User_Monitor.Show();
+                //}
+                //if (Pit_Monitor == null || Pit_Monitor.Text == "")
+                //{
+                //    Pit_Monitor = new Frm_PitInMonitor();
+                //    Pit_Monitor.Show();
+                //}
+                    
             }
 
             //m_tcpSpeed =  new KI_TcpClient("127.0.0.1", 8511);
@@ -133,6 +142,11 @@ namespace Ki_WAT
         private void btnManual_Click(object sender, EventArgs e)
         {
             m_tcpBoardSpeed.Send("asdf");
+        }
+
+        private void Btn_T_Click(object sender, EventArgs e)
+        {
+            m_dbJob.SelectCarInfo("2024061100202");
         }
     }
 }

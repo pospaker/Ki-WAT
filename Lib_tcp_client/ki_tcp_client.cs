@@ -4,7 +4,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 
-namespace TcpLib
+namespace KINT_Lib
 {
     public class KI_TcpClient : IDisposable
     {
@@ -20,8 +20,6 @@ namespace TcpLib
         public delegate void DataReceiveClient(byte[] data);
         public event DataReceiveClient OnDataReceived;
 
-
-
         public bool IsConnected => _isConnected;
 
         public KI_TcpClient()
@@ -32,7 +30,6 @@ namespace TcpLib
         {
             try
             {
-             
                 _ipAddress = ipAddress;
                 _port = port;
                 _client = new TcpClient();
