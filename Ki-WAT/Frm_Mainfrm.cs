@@ -22,6 +22,7 @@ namespace Ki_WAT
         public Frm_Config m_frmConfig = new Frm_Config();
         private KI_TcpClient m_tcpBoardSpeed = new KI_TcpClient();
         private KI_Tcp_Server m_tcp_Server = new KI_Tcp_Server();
+        private Frm_Operator User_Monitor = null;
 
         public Frm_Mainfrm()
         {
@@ -41,6 +42,15 @@ namespace Ki_WAT
 
             m_tcpBoardSpeed.Connect("127.0.0.1", 8511);
             m_tcpBoardSpeed.OnDataReceived += new DataReceiveClient(event_GetSpeedData);
+
+            if (!this.DesignMode)
+            {
+                if (User_Monitor == null || User_Monitor.Text == "")
+                {
+                    User_Monitor = new Frm_Operator();
+                    User_Monitor.Show();
+                }
+            }
 
             //m_tcpSpeed =  new KI_TcpClient("127.0.0.1", 8511);
         }

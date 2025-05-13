@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Define.cs" />
+    <Compile Include="DG_ComLib.cs" />
     <Compile Include="Frm_Config.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +77,12 @@
     <Compile Include="Frm_Main.Designer.cs">
       <DependentUpon>Frm_Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_Operator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Operator.Designer.cs">
+      <DependentUpon>Frm_Operator.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Frm_Config.resx">
@@ -86,6 +93,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Main.resx">
       <DependentUpon>Frm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Operator.resx">
+      <DependentUpon>Frm_Operator.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
