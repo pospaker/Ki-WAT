@@ -30,32 +30,33 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Mainfrm));
             this.panelNavBar = new System.Windows.Forms.Panel();
+            this.BtnCal = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.Btn_T = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.picLogo = new System.Windows.Forms.PictureBox();
-            this.btnParameter = new System.Windows.Forms.Button();
+            this.BtnParam = new System.Windows.Forms.Button();
             this.btnIo = new System.Windows.Forms.Button();
             this.BtnConfig = new System.Windows.Forms.Button();
-            this.btnManual = new System.Windows.Forms.Button();
-            this.pbLogo = new System.Windows.Forms.PictureBox();
+            this.BtnManual = new System.Windows.Forms.Button();
             this.BtnMain = new System.Windows.Forms.Button();
-            this.Btn_T = new System.Windows.Forms.Button();
             this.panelNavBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // panelNavBar
             // 
             this.panelNavBar.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panelNavBar.Controls.Add(this.BtnCal);
+            this.panelNavBar.Controls.Add(this.button1);
             this.panelNavBar.Controls.Add(this.Btn_T);
             this.panelNavBar.Controls.Add(this.pictureBox1);
             this.panelNavBar.Controls.Add(this.picLogo);
-            this.panelNavBar.Controls.Add(this.btnParameter);
+            this.panelNavBar.Controls.Add(this.BtnParam);
             this.panelNavBar.Controls.Add(this.btnIo);
             this.panelNavBar.Controls.Add(this.BtnConfig);
-            this.panelNavBar.Controls.Add(this.btnManual);
-            this.panelNavBar.Controls.Add(this.pbLogo);
+            this.panelNavBar.Controls.Add(this.BtnManual);
             this.panelNavBar.Controls.Add(this.BtnMain);
             this.panelNavBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelNavBar.Location = new System.Drawing.Point(0, 0);
@@ -64,14 +65,61 @@
             this.panelNavBar.Size = new System.Drawing.Size(91, 1011);
             this.panelNavBar.TabIndex = 6;
             // 
+            // BtnCal
+            // 
+            this.BtnCal.BackColor = System.Drawing.Color.Gainsboro;
+            this.BtnCal.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnCal.Font = new System.Drawing.Font("Verdana", 12F);
+            this.BtnCal.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.BtnCal.Location = new System.Drawing.Point(4, 237);
+            this.BtnCal.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnCal.Name = "BtnCal";
+            this.BtnCal.Size = new System.Drawing.Size(83, 60);
+            this.BtnCal.TabIndex = 553;
+            this.BtnCal.Tag = "frmParameter";
+            this.BtnCal.Text = "Cal";
+            this.BtnCal.UseVisualStyleBackColor = false;
+            this.BtnCal.Click += new System.EventHandler(this.BtnCal_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Gainsboro;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Verdana", 12F);
+            this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button1.Location = new System.Drawing.Point(4, 521);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(83, 60);
+            this.button1.TabIndex = 552;
+            this.button1.Tag = "frmSetting";
+            this.button1.Text = "Langu  age";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // Btn_T
+            // 
+            this.Btn_T.BackColor = System.Drawing.Color.Gainsboro;
+            this.Btn_T.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Btn_T.Font = new System.Drawing.Font("Verdana", 12F);
+            this.Btn_T.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.Btn_T.Location = new System.Drawing.Point(4, 816);
+            this.Btn_T.Margin = new System.Windows.Forms.Padding(4);
+            this.Btn_T.Name = "Btn_T";
+            this.Btn_T.Size = new System.Drawing.Size(83, 60);
+            this.Btn_T.TabIndex = 551;
+            this.Btn_T.Tag = "frmSetting";
+            this.Btn_T.Text = "TT";
+            this.Btn_T.UseVisualStyleBackColor = false;
+            this.Btn_T.Click += new System.EventHandler(this.Btn_T_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 917);
+            this.pictureBox1.Location = new System.Drawing.Point(7, 901);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(66, 51);
+            this.pictureBox1.Size = new System.Drawing.Size(77, 71);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 550;
             this.pictureBox1.TabStop = false;
@@ -88,21 +136,21 @@
             this.picLogo.TabIndex = 549;
             this.picLogo.TabStop = false;
             // 
-            // btnParameter
+            // BtnParam
             // 
-            this.btnParameter.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnParameter.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnParameter.Font = new System.Drawing.Font("Verdana", 12F);
-            this.btnParameter.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnParameter.Location = new System.Drawing.Point(5, 163);
-            this.btnParameter.Margin = new System.Windows.Forms.Padding(4);
-            this.btnParameter.Name = "btnParameter";
-            this.btnParameter.Size = new System.Drawing.Size(83, 60);
-            this.btnParameter.TabIndex = 95;
-            this.btnParameter.Tag = "frmParameter";
-            this.btnParameter.Text = "Param";
-            this.btnParameter.UseVisualStyleBackColor = false;
-            this.btnParameter.Click += new System.EventHandler(this.btnParameter_Click);
+            this.BtnParam.BackColor = System.Drawing.Color.Gainsboro;
+            this.BtnParam.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnParam.Font = new System.Drawing.Font("Verdana", 12F);
+            this.BtnParam.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.BtnParam.Location = new System.Drawing.Point(5, 166);
+            this.BtnParam.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnParam.Name = "BtnParam";
+            this.BtnParam.Size = new System.Drawing.Size(83, 60);
+            this.BtnParam.TabIndex = 95;
+            this.BtnParam.Tag = "frmParameter";
+            this.BtnParam.Text = "Param";
+            this.BtnParam.UseVisualStyleBackColor = false;
+            this.BtnParam.Click += new System.EventHandler(this.btnParameter_Click);
             // 
             // btnIo
             // 
@@ -110,7 +158,7 @@
             this.btnIo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnIo.Font = new System.Drawing.Font("Verdana", 12F);
             this.btnIo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnIo.Location = new System.Drawing.Point(4, 299);
+            this.btnIo.Location = new System.Drawing.Point(4, 379);
             this.btnIo.Margin = new System.Windows.Forms.Padding(4);
             this.btnIo.Name = "btnIo";
             this.btnIo.Size = new System.Drawing.Size(83, 60);
@@ -118,6 +166,7 @@
             this.btnIo.Tag = "frmIo";
             this.btnIo.Text = "Digital I/O";
             this.btnIo.UseVisualStyleBackColor = false;
+            this.btnIo.Click += new System.EventHandler(this.btnIo_Click);
             // 
             // BtnConfig
             // 
@@ -125,7 +174,7 @@
             this.BtnConfig.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnConfig.Font = new System.Drawing.Font("Verdana", 12F);
             this.BtnConfig.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BtnConfig.Location = new System.Drawing.Point(4, 367);
+            this.BtnConfig.Location = new System.Drawing.Point(4, 450);
             this.BtnConfig.Margin = new System.Windows.Forms.Padding(4);
             this.BtnConfig.Name = "BtnConfig";
             this.BtnConfig.Size = new System.Drawing.Size(83, 60);
@@ -135,31 +184,21 @@
             this.BtnConfig.UseVisualStyleBackColor = false;
             this.BtnConfig.Click += new System.EventHandler(this.BtnConfig_Click);
             // 
-            // btnManual
+            // BtnManual
             // 
-            this.btnManual.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnManual.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnManual.Font = new System.Drawing.Font("Verdana", 12F);
-            this.btnManual.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnManual.Location = new System.Drawing.Point(4, 231);
-            this.btnManual.Margin = new System.Windows.Forms.Padding(4);
-            this.btnManual.Name = "btnManual";
-            this.btnManual.Size = new System.Drawing.Size(83, 60);
-            this.btnManual.TabIndex = 4;
-            this.btnManual.Tag = "frmManual";
-            this.btnManual.Text = "Manual";
-            this.btnManual.UseVisualStyleBackColor = false;
-            this.btnManual.Click += new System.EventHandler(this.btnManual_Click);
-            // 
-            // pbLogo
-            // 
-            this.pbLogo.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pbLogo.Location = new System.Drawing.Point(0, 974);
-            this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(91, 37);
-            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbLogo.TabIndex = 24;
-            this.pbLogo.TabStop = false;
+            this.BtnManual.BackColor = System.Drawing.Color.Gainsboro;
+            this.BtnManual.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnManual.Font = new System.Drawing.Font("Verdana", 12F);
+            this.BtnManual.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.BtnManual.Location = new System.Drawing.Point(4, 308);
+            this.BtnManual.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnManual.Name = "BtnManual";
+            this.BtnManual.Size = new System.Drawing.Size(83, 60);
+            this.BtnManual.TabIndex = 4;
+            this.BtnManual.Tag = "frmManual";
+            this.BtnManual.Text = "Manual";
+            this.BtnManual.UseVisualStyleBackColor = false;
+            this.BtnManual.Click += new System.EventHandler(this.btnManual_Click);
             // 
             // BtnMain
             // 
@@ -177,26 +216,11 @@
             this.BtnMain.UseVisualStyleBackColor = false;
             this.BtnMain.Click += new System.EventHandler(this.BtnMain_Click);
             // 
-            // Btn_T
-            // 
-            this.Btn_T.BackColor = System.Drawing.Color.Gainsboro;
-            this.Btn_T.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Btn_T.Font = new System.Drawing.Font("Verdana", 12F);
-            this.Btn_T.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Btn_T.Location = new System.Drawing.Point(4, 475);
-            this.Btn_T.Margin = new System.Windows.Forms.Padding(4);
-            this.Btn_T.Name = "Btn_T";
-            this.Btn_T.Size = new System.Drawing.Size(83, 60);
-            this.Btn_T.TabIndex = 551;
-            this.Btn_T.Tag = "frmSetting";
-            this.Btn_T.Text = "TT";
-            this.Btn_T.UseVisualStyleBackColor = false;
-            this.Btn_T.Click += new System.EventHandler(this.Btn_T_Click);
-            // 
             // Frm_Mainfrm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1904, 1011);
             this.Controls.Add(this.panelNavBar);
             this.DoubleBuffered = true;
@@ -210,22 +234,22 @@
             this.panelNavBar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.Panel panelNavBar;
-        private System.Windows.Forms.Button btnParameter;
+        private System.Windows.Forms.Button BtnParam;
         private System.Windows.Forms.Button btnIo;
         private System.Windows.Forms.Button BtnConfig;
-        private System.Windows.Forms.Button btnManual;
-        public System.Windows.Forms.PictureBox pbLogo;
+        private System.Windows.Forms.Button BtnManual;
         private System.Windows.Forms.Button BtnMain;
         private System.Windows.Forms.PictureBox picLogo;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button Btn_T;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnCal;
     }
 }
 

@@ -89,11 +89,35 @@
     <Compile Include="Frm_Operator.Designer.cs">
       <DependentUpon>Frm_Operator.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_Oper_Rolling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Oper_Rolling.Designer.cs">
+      <DependentUpon>Frm_Oper_Rolling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Oper_Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Oper_Test.Designer.cs">
+      <DependentUpon>Frm_Oper_Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Oper_Wait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Oper_Wait.Designer.cs">
+      <DependentUpon>Frm_Oper_Wait.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_PitInMonitor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frm_PitInMonitor.Designer.cs">
       <DependentUpon>Frm_PitInMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Rolling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Rolling.Designer.cs">
+      <DependentUpon>Frm_Rolling.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -109,8 +133,20 @@
     <EmbeddedResource Include="Frm_Operator.resx">
       <DependentUpon>Frm_Operator.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Oper_Rolling.resx">
+      <DependentUpon>Frm_Oper_Rolling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Oper_Test.resx">
+      <DependentUpon>Frm_Oper_Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Oper_Wait.resx">
+      <DependentUpon>Frm_Oper_Wait.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_PitInMonitor.resx">
       <DependentUpon>Frm_PitInMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Rolling.resx">
+      <DependentUpon>Frm_Rolling.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -120,6 +156,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -136,6 +173,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="K-Logo.ico" />
+    <None Include="Resources\Handle.jpg" />
+    <None Include="Resources\Rolling.jpg" />
+    <None Include="Resources\Gray.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
