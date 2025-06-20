@@ -125,8 +125,15 @@
     <Compile Include="Frm_Rolling.Designer.cs">
       <DependentUpon>Frm_Rolling.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_StaticMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_StaticMaster.Designer.cs">
+      <DependentUpon>Frm_StaticMaster.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="testc.cs" />
     <EmbeddedResource Include="Frm_Config.resx">
       <DependentUpon>Frm_Config.cs</DependentUpon>
     </EmbeddedResource>
