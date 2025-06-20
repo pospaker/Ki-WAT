@@ -8,12 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using KINT_Lib;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
+//using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 using static KINT_Lib.KI_TcpClient;
 
 namespace Ki_WAT
 {
-    public partial class Frm_Mainfrm : Form
+    public partial class Frm_Mainfrm : Form 
     {
 
         public Frm_Main m_frmMain = new Frm_Main();
@@ -55,11 +55,12 @@ namespace Ki_WAT
             m_dbJob = new DB_LocalWat(Application.StartupPath + "\\System\\WAT-DataDB.mdb");
 
             m_NavButtons.Add(BtnMain);
-            m_NavButtons.Add(BtnParam);
+            
             m_NavButtons.Add(BtnManual);
             m_NavButtons.Add(btnIo);
             m_NavButtons.Add(BtnConfig);
-            m_NavButtons.Add(BtnCal);
+            m_NavButtons.Add(Btn_Rolling);
+            m_NavButtons.Add(Btn_StaticMaster);
 
 
             if (!this.DesignMode)
@@ -198,6 +199,11 @@ namespace Ki_WAT
         {
             ChangeButtonColor((Button)sender);
             ShowFrm(Def.FOM_IDX_ROLLING);
+        }
+
+        private void Btn_StaticMaster_Click(object sender, EventArgs e)
+        {
+            ChangeButtonColor((Button)sender);
         }
     }
 }
